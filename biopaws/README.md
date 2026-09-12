@@ -48,10 +48,10 @@ src/
 │   ├── Marquee.tsx       # Cinta inclinada de ingredientes/valores
 │   ├── About.tsx         # Sobre nosotros + tablero de marca tipo polaroid
 │   ├── MissionVision.tsx # Bento Misión / Visión / Impacto / Objetivo
-│   ├── Products.tsx      # Producto 500 ml + maquetas de aromas (wireframe)
-│   ├── Pricing.tsx       # 3 tarjetas con placeholders S/ 00.00 / $00.00
+│   ├── Products.tsx      # Producto 500 ml + ficha del aroma único
+│   ├── Pricing.tsx       # Pack 1 (S/ 16.00) y Pack 2 (S/ 30.00)
 │   ├── Values.tsx        # 4 valores con separadores de hairline
-│   ├── Policies.tsx      # Acordeón animado (Anime.js) con cuerpos placeholder
+│   ├── Policies.tsx      # Acordeón animado: canales, tiempos, quejas y envíos
 │   ├── Testimonials.tsx  # Carrusel scroll-snap con reseñas y foto-placeholders
 │   ├── Contact.tsx       # Instagram @BioPaws_oficial + formulario estilizado
 │   ├── Footer.tsx        # Cierre marrón con legales y copyright
@@ -80,7 +80,8 @@ Todo respeta `prefers-reduced-motion`.
 
 - **Aromas**: tarjetas wireframe "Aroma Avena & Coco" y "Aroma Aloe & Manzanilla"
   con área de foto, skeletons y nota editorial.
-- **Precios**: `S/ 00.00 / $00.00` editables en `src/components/Pricing.tsx`.
+- **Precios**: Pack 1 S/ 16.00 y Pack 2 S/ 30.00, editables en el array
+  `TIERS` de `src/components/Pricing.tsx`.
 - **Políticas**: cuerpos de acordeón con bloque "Contenido en preparación".
 - **Testimonios**: reseñas marcadas como *ejemplo* + marcos de foto de cliente.
 - **Contacto**: correo `hola@biopaws.pe` marcado como editable; Instagram real
