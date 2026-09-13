@@ -124,7 +124,7 @@ export default function Products() {
             <div className="m-6 flex aspect-[4/3] flex-col items-center justify-center gap-3 rounded-2xl border border-dashed border-bark/20 bg-cream/70 text-bark/40 sm:aspect-auto sm:min-h-full">
               <ImagePlus className="h-8 w-8" aria-hidden />
               <span className="text-[10px] font-bold uppercase tracking-[0.24em]">
-                Foto del aroma
+                Foto
               </span>
             </div>
             <div className="p-8 sm:py-9 sm:pr-10">
