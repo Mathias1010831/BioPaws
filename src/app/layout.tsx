@@ -19,7 +19,7 @@ const karla = Karla({
 export const metadata: Metadata = {
   title: "BioPaws · Cuidado natural para patas felices",
   description:
-    "Shampoo natural para perros elaborado con avena, aloe vera, aceite de coco y manzanilla. 100% ecológico, cruelty free y biodegradable.",
+    "Shampoo natural para perros elaborado con avena, aloe vera, aceite de coco y manzanilla. 100% ecológico y biodegradable.",
   keywords: [
     "shampoo natural para perros",
     "BioPaws",

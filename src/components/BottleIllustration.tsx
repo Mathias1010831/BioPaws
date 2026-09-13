@@ -31,7 +31,7 @@ export default function BottleIllustration({
         </clipPath>
       </defs>
 
-      {/* Hoja decorativa junto al dosificador */}
+      {/* Hoja decorativa junto a la bomba */}
       <path
         d="M170 54 c 15 -12 29 -10 36 -3 c -9 11 -25 14 -36 3 z"
         fill="#78AC12"
@@ -45,7 +45,7 @@ export default function BottleIllustration({
         opacity="0.7"
       />
 
-      {/* Dosificador */}
+      {/* Bomba (pump) del frasco */}
       <rect x="58" y="20" width="52" height="17" rx="8.5" fill="#38190F" />
       <rect x="102" y="10" width="56" height="36" rx="13" fill="#522A1F" />
       <rect x="117" y="44" width="26" height="34" rx="7" fill="#38190F" />

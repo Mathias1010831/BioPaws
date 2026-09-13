@@ -12,7 +12,7 @@ const CARDS = [
   {
     icon: Leaf,
     title: "Amigos del ambiente",
-    text: "Ingredientes biodegradables, empaque responsable y cero pruebas en animales. Nunca.",
+    text: "Ingredientes biodegradables y un empaque responsable que vuelve a la tierra sin dejar rastro.",
     tilt: "rotate-1",
   },
 ];

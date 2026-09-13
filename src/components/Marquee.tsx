@@ -7,7 +7,6 @@ const ITEMS = [
   "Manzanilla suave",
   "Sin sulfatos",
   "Sin parabenos",
-  "Cruelty free",
   "Biodegradable",
 ];
 

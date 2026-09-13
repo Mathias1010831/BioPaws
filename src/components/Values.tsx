@@ -1,4 +1,4 @@
-import { Leaf, Rabbit, Recycle, ShieldCheck } from "lucide-react";
+import { Leaf, Recycle, ShieldCheck } from "lucide-react";
 import Reveal from "./Reveal";
 import SectionHeading from "./SectionHeading";
 
@@ -7,11 +7,6 @@ const VALUES = [
     icon: Leaf,
     title: "100% ecológico",
     text: "Ingredientes de origen natural cultivados con respeto por la tierra.",
-  },
-  {
-    icon: Rabbit,
-    title: "Cruelty free",
-    text: "Ninguna fórmula se prueba en animales. Solo colas felices.",
   },
   {
     icon: ShieldCheck,
@@ -41,12 +36,12 @@ export default function Values() {
           />
         </Reveal>
 
-        <div className="mt-14 grid gap-y-12 sm:grid-cols-2 lg:grid-cols-4 lg:gap-x-0">
+        <div className="mt-14 grid gap-y-12 sm:grid-cols-3 lg:gap-x-0">
           {VALUES.map(({ icon: Icon, title, text }, i) => (
             <Reveal
               key={title}
               delay={i * 100}
-              className={`group px-2 lg:px-8 ${
+              className={`group px-2 lg:px-10 ${
                 i > 0 ? "lg:border-l lg:border-bark/10" : ""
               }`}
             >

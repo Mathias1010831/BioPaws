@@ -4,49 +4,32 @@ import SectionHeading from "./SectionHeading";
 
 const TIERS = [
   {
-    name: "Botella 500 ml",
-    detail: "Shampoo natural · aroma original",
+    name: "Pack 1",
+    detail: "1 botella · shampoo natural 500 ml",
     price: "S/ 16.00",
-    alt: null as string | null,
+    alt: "S/ 16.00 c/u",
     features: [
       "Rinde hasta 25 baños",
       "Apto para pieles sensibles",
       "Empaque 100% reciclable",
     ],
-    cta: "Pedir mi botella",
-    featured: true,
-    badge: "Disponible ahora" as string | null,
-    soon: false,
+    cta: "Pedir mi Pack 1",
+    featured: false,
+    badge: null as string | null,
   },
   {
-    name: "Dúo de la manada",
-    detail: "2 × 500 ml + dosificador",
-    price: "S/ 00.00",
-    alt: "$00.00",
+    name: "Pack 2",
+    detail: "2 botellas × 500 ml",
+    price: "S/ 30.00",
+    alt: "S/ 15.00 c/u",
     features: [
-      "Ahorro frente al unitario",
-      "Dosificador de regalo",
+      "Ahorras S/ 2 frente al unitario",
+      "Rinde hasta 50 baños en total",
       "Envío prioritario a todo el Perú",
     ],
-    cta: "Quiero el dúo",
-    featured: false,
-    badge: null as string | null,
-    soon: true,
-  },
-  {
-    name: "Ruta mensual",
-    detail: "Suscripción renovable",
-    price: "S/ 00.00",
-    alt: "$00.00",
-    features: [
-      "Entrega cada 30 días",
-      "Pausa o cancela cuando quieras",
-      "Precio congelado todo el año",
-    ],
-    cta: "Avisarme al lanzarla",
-    featured: false,
-    badge: null as string | null,
-    soon: true,
+    cta: "Quiero el Pack 2",
+    featured: true,
+    badge: "Favorito de la manada",
   },
 ];
 
@@ -63,15 +46,15 @@ export default function Pricing() {
             eyebrow="Precios"
             title={
               <>
-                Precios claros, como{" "}
-                <em className="italic text-leaf-deep">nuestra fórmula</em>
+                Dos packs, cero{" "}
+                <em className="italic text-leaf-deep">letras pequeñas</em>
               </>
             }
-            lead="Sin letras pequeñas ni sorpresas: hoy, una botella honesta con un precio honesto."
+            lead="Elige tu ritmo de baño: una botella para probarlo, o el dúo para que el brillo dure el doble."
           />
         </Reveal>
 
-        <div className="mt-16 grid items-stretch gap-6 md:grid-cols-3">
+        <div className="mx-auto mt-16 grid max-w-3xl items-stretch gap-6 md:grid-cols-2">
           {TIERS.map((tier, i) => (
             <Reveal key={tier.name} delay={i * 110} className="h-full">
               <article
@@ -87,31 +70,18 @@ export default function Pricing() {
                   </span>
                 ) : null}
 
-                <h3 className="font-display text-xl font-semibold text-bark">
+                <h3 className="font-display text-2xl font-semibold text-bark">
                   {tier.name}
                 </h3>
-                <p className="mt-1 text-sm text-bark/55">
-                  {tier.detail}
-                  {tier.soon ? (
-                    <span className="ml-2 inline-block rounded-full bg-bark/5 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-bark/50">
-                      Próximamente
-                    </span>
-                  ) : null}
-                </p>
+                <p className="mt-1 text-sm text-bark/55">{tier.detail}</p>
 
                 <div className="mt-6 flex items-baseline gap-2.5">
                   <span className="font-display text-[2.6rem] font-semibold leading-none tracking-tight text-bark">
                     {tier.price}
                   </span>
-                  {tier.alt ? (
-                    <span className="text-sm font-medium text-bark/45">
-                      {tier.alt}
-                    </span>
-                  ) : (
-                    <span className="text-sm font-medium text-bark/45">
-                      por botella
-                    </span>
-                  )}
+                  <span className="text-sm font-medium text-bark/45">
+                    {tier.alt}
+                  </span>
                 </div>
 
                 <ul className="mb-8 mt-7 space-y-3 text-sm text-bark/70">
@@ -143,9 +113,8 @@ export default function Pricing() {
 
         <Reveal delay={120}>
           <p className="mt-12 text-center text-sm text-bark/50">
-            La botella de 500 ml ya tiene precio oficial: S/ 16.00. El dúo y la
-            suscripción están en evaluación; sus montos son placeholders
-            editables (S/ 00.00 / $00.00).
+            El Pack 2 deja cada botella en S/ 15.00: ahorras S/ 2 frente a
+            comprarlas por separado.
           </p>
         </Reveal>
       </div>

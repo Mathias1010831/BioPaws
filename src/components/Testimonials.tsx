@@ -10,21 +10,21 @@ const REVIEWS = [
     quote:
       "Luna solía rascarse después del baño. Con BioPaws eso se acabó: huele divino y su pelaje está más suave que nunca.",
     name: "Mariana Q.",
-    pet: "Perra de Luna · Arequipa",
+    pet: "Luna, su perro · Arequipa",
     initials: "MQ",
   },
   {
     quote:
       "Me encanta que sea biodegradable: baño a Thor en el jardín sin culpa alguna. El aroma a coco es una locura.",
     name: "Carlos M.",
-    pet: "Perro de Thor · Lima",
+    pet: "Thor, su perro · Lima",
     initials: "CM",
   },
   {
     quote:
       "Bañaba a mis dos perros con shampoo comercial y se rascaban siempre. Con BioPaws eso se acabó: el aroma a manzanilla es delicado y limpio.",
     name: "Fiorella R.",
-    pet: "Perros de Miel y Rocky · Cusco",
+    pet: "Miel y Rocky, sus perros · Cusco",
     initials: "FR",
   },
 ];
